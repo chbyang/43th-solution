@@ -38,7 +38,7 @@ My work gets 0.800 ROC AUC score. My improvement comes from:
 
 My code:
 ====================
-#### 1_clean_test_train_v3
+## 1_clean_test_train_v3
 
 INPUT: **application_train.csv** and **application_test.csv**
 
@@ -50,7 +50,7 @@ Fill some nan by some meaningful values if i am sure about meaning of those feat
 
 OUTPUT: **train_cleaned.csv** and **test_cleaned.csv**
 
-#### 2_feature_engineer_v8
+## 2_feature_engineer_v8
 
 INPUT: **train_cleaned.csv** and **test_cleaned.csv**
 
