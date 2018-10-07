@@ -48,7 +48,7 @@ Clean some outliers
 
 Fill some nan by some meaningful values if i am sure about meaning of those features; 
 
-OUTPUT file: **train_cleaned.csv** and **test_cleaned.csv**
+OUTPUT: **train_cleaned.csv** and **test_cleaned.csv**
 
 2
 
