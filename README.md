@@ -59,8 +59,42 @@ OUTPUT: **m_train_domain.csv** and **m_test_domain.csv**
 
 INPUT: **m_train_domain.csv** and **m_test_domain.csv** and **bureau.csv** and **bureau_balance.csv**
 
-m_train/test_domain have information of current application. bureau and bureau_balance are past applications. group them together and did more feature engineer.
+m_train/test_domain have information of current application. bureau and bureau_balance are past applications. group them together and did more feature engineering.
 
 OUTPUT: **train_bureau_raw.csv** and **test_bureau_raw.csv**
 
+## 4_clean_previous_v2
 
+INPUT: **m_train_domain.csv** and **m_test_domain.csv** and **previous_application.csv** and **POS_CASH_balance.csv** and **installments_payments.csv**
+
+m_train/test_domain have information of current application. previous_application, POS_CASH_balance and installments_payments are past applications to HOME CREDIT. group them together and did more feature engineering.
+
+OUTPUT: **train_previous_raw.csv** and **test_previous_raw.csv**
+
+## 5_merge_test_train_bureau_previous
+
+INPUT: **train_previous_raw.csv** and **test_previous_raw.csv** and **train_bureau_raw.csv** and **test_bureau_raw.csv**
+
+Merge file got from 3 and 4
+
+OUTPUT: **m_train_selected.csv** and **m_test_selected.csv**
+
+## 6_feature_selection
+
+INPUT: **m_train_selected.csv** and **m_test_selected.csv**
+
+Run lgb model and output importance. onnly keep features that sum of their normalized importance is 0.95
+
+OUTPUT: **m_train_small.csv** and **m_test_small.csv**
+
+## 7_lgb
+
+INPUT: **m_train_small.csv** and **m_test_small.csv**
+
+## 8_xgb
+
+INPUT: **m_train_small.csv** and **m_test_small.csv**
+
+## 9_stacking
+
+suggest 0.4*xgb+0.3*lgb_1+0.3*lgb_2
