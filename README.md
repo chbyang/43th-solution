@@ -25,7 +25,7 @@ credit_card_balance: monthly data about previous credit cards clients have had w
 
 installments_payment: payment history for previous loans at Home Credit. There is one row for every made payment and one row for every missed payment.
 
-Input:
+Baseline:
 ====================
 
 My work starts from [Will Koehrsen’s kernel](https://www.kaggle.com/willkoehrsen/start-here-a-gentle-introduction): His code can get 0.782 ROC AUC 
