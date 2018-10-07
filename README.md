@@ -91,10 +91,29 @@ OUTPUT: **m_train_small.csv** and **m_test_small.csv**
 
 INPUT: **m_train_small.csv** and **m_test_small.csv**
 
+parameter_1
+lgb.LGBMClassifier(n_estimators=10000, objective = 'binary', boosting_type='goss',
+                                   class_weight = 'balanced', learning_rate = 0.05, 
+                                   reg_alpha = 0.1, reg_lambda = 0.1, n_jobs = -1, random_state = 50)
+                                   
+cv=0.7956
+
+parameter_2
+lgb.LGBMClassifier(nthread=12,n_estimators=50000,number_boosting_rounds=5000,
+            learning_rate=0.001,max_bin=300,max_depth=-1,num_leaves=30,min_child_samples=70,
+            subsample=1.0,subsample_freq=1,colsample_bytree=0.05,min_gain_to_split=0.5,
+            reg_lambda=100,reg_alpha=0.0,scale_pos_weight=1,is_unbalance=False,min_child_weight=60,
+            silent=-1,verbose=-1, )
+            
+cv=0.7979
+
 ## 8_xgb
 
 INPUT: **m_train_small.csv** and **m_test_small.csv**
 
+cv=0.7968
+
 ## 9_stacking
 
-suggest 0.4*xgb+0.3*lgb_1+0.3*lgb_2
+suggest 0.4 xgb+0.3 lgb_1+0.3 lgb_2
+or neural network stacking
