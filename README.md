@@ -25,6 +25,9 @@ credit_card_balance: monthly data about previous credit cards clients have had w
 
 installments_payment: payment history for previous loans at Home Credit. There is one row for every made payment and one row for every missed payment.
 
+Input:
+====================
+
 My work starts from [Will Koehrsen’s kernel](https://www.kaggle.com/willkoehrsen/start-here-a-gentle-introduction): His code can get 0.782 ROC AUC 
 
 My work gets 0.800 ROC AUC score. My improvement comes from: 
@@ -32,3 +35,8 @@ My work gets 0.800 ROC AUC score. My improvement comes from:
 1. Add hundreds of new features during feature engineering 
 2. Find two quite different LightGBM parameter sets can improve cv 
 3. Add Xgboost and stack with those two LightGBM results
+
+My code:
+====================
+
+
