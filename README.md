@@ -40,15 +40,15 @@ My code:
 ====================
 1_clean_test_train_v3
 
-input: application_train and application_test; 
+INPUT: **application_train.csv** and **application_test.csv**
 
-use plot/value_counts/describe/isnull to investigate features; 
+Use plot/value_counts/describe/isnull to investigate features
 
-clean some outliers; 
+Clean some outliers
 
-fill some nan by some meaningful values if i am sure about meaning of those features; 
+Fill some nan by some meaningful values if i am sure about meaning of those features; 
 
-output file: train_cleaned and test_cleaned
+OUTPUT file: **train_cleaned.csv** and **test_cleaned.csv**
 
 2
 
