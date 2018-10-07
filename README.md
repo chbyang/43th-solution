@@ -55,3 +55,12 @@ EXT_SOURCE_1 EXT_SOURCE_2 EXT_SOURCE_3 turn out to be 3 most important features.
 
 OUTPUT: **m_train_domain.csv** and **m_test_domain.csv**
 
+## 3_clean_bureau_v2
+
+INPUT: **m_train_domain.csv** and **m_test_domain.csv** and **bureau.csv** and **bureau_balance.csv**
+
+m_train/test_domain have information of current application. bureau and bureau_balance are past applications. group them together and did more feature engineer.
+
+OUTPUT: **train_bureau_raw.csv** and **test_bureau_raw.csv**
+
+
