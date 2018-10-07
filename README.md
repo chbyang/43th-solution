@@ -1,13 +1,11 @@
 # 43th-solution
 Kaggle: Home credit default risk
 
-Goal: 
-====================
+# Goal: 
 
 predict whether a client will repay a loan or default 
 
-Input:
-====================
+# Input:
 
 can be downloaded from [here](https://www.kaggle.com/c/home-credit-default-risk/data):
 
@@ -25,8 +23,7 @@ credit_card_balance: monthly data about previous credit cards clients have had w
 
 installments_payment: payment history for previous loans at Home Credit. There is one row for every made payment and one row for every missed payment.
 
-Baseline:
-====================
+# Baseline:
 
 My work starts from [Will Koehrsen’s kernel](https://www.kaggle.com/willkoehrsen/start-here-a-gentle-introduction): His code can get 0.782 ROC AUC 
 
@@ -36,8 +33,8 @@ My work gets 0.800 ROC AUC score. My improvement comes from:
 2. Find two quite different LightGBM parameter sets can improve cv 
 3. Add Xgboost and stack with those two LightGBM results
 
-My code:
-====================
+# My code:
+
 ## 1_clean_test_train_v3
 
 INPUT: **application_train.csv** and **application_test.csv**
