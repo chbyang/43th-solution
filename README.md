@@ -50,5 +50,11 @@ Fill some nan by some meaningful values if i am sure about meaning of those feat
 
 OUTPUT: **train_cleaned.csv** and **test_cleaned.csv**
 
-2
+2_feature_engineer_v8
+
+INPUT: **train_cleaned.csv** and **test_cleaned.csv**
+
+EXT_SOURCE_1 EXT_SOURCE_2 EXT_SOURCE_3 turn out to be 3 most important features. They are credit score from other bureau companies. There are some other important features and i use them + - * / each other to try to get some good features.
+
+OUTPUT: **m_train_domain.csv** and **m_test_domain.csv**
 
