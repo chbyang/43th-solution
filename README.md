@@ -41,9 +41,13 @@ My code:
 1_clean_test_train_v3
 
 input: application_train and application_test; 
+
 use plot/value_counts/describe/isnull to investigate features; 
+
 clean some outliers; 
+
 fill some nan by some meaningful values if i am sure about meaning of those features; 
+
 output file: train_cleaned and test_cleaned
 
 2
