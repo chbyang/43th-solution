@@ -83,7 +83,7 @@ OUTPUT: **m_train_selected.csv** and **m_test_selected.csv**
 
 INPUT: **m_train_selected.csv** and **m_test_selected.csv**
 
-Run lgb model and output importance. onnly keep features that sum of their normalized importance is 0.95
+Run lgb model and output importance. onnly keep features that sum of whose normalized importance is 0.95
 
 OUTPUT: **m_train_small.csv** and **m_test_small.csv**
 
